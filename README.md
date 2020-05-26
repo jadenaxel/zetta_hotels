@@ -1,1 +1,1 @@
-# zetta_hotels
+# Zetta Hotels
