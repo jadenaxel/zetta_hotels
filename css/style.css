@@ -1,0 +1,760 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --color-white: #fff;
+    --font-poppins: "Poppins";
+}
+.center{
+    max-width: 1366vw;
+    width: 100%;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1070px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    background: url("../img/header-background.svg") no-repeat fixed center / cover;
+    height: 700px;
+    margin-bottom: 126px;
+}
+.reference{
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin-bottom: 185px;
+}
+.nav_logo img{
+    width: 85px;
+    height: 20px;
+}
+.nav__ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav__link{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    font-family: var(--font-poppins);
+}
+.presentation{
+    margin-bottom: 135px;
+}
+.presentation__title{
+    width: 576px;
+    font-size: 62px;
+    font-family: var(--font-poppins);
+    font-weight: 900;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+.presentation__desc{
+    width: 352px;
+    color: var(--color-white);
+    font-family: var(--font-poppins);
+    font-size: 14px;
+    font-weight: normal; 
+}
+.reservation{
+    width: 1088px;
+    padding: 35px 92px;
+    background: white;
+    position: absolute;
+    top: 621px;
+    box-shadow: 0 15px 30px -20px;
+}
+.reservation__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.reservation__date-in-label, .reservation__date-out-label, .reservation__rooms-label{
+    display: block;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 13px;
+    color: #5863f8;
+}
+.reservation__date-in-input, .reservation__date-out-input, .reservation__rooms-input{
+    width: 260px;
+    height: 50px;
+    background: #eee;
+    border: 0;
+    font-family: var(--font-poppins);
+    font-weight: normal;
+    font-size: 13px;
+    text-align: left;
+    color: #cecece;
+    padding: 2em;
+}
+.reservation__date-in-input, .reservation__date-out-input, .reservation__rooms-input:focus{
+    outline-color: blue;
+}
+.reservation__form-link{
+    width: 51px;
+    height: 51px;
+    background: #5863f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 90px;
+}
+.grid__about{
+    padding: 2em 4em;
+}
+.grid__about-title{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 14px;
+    color: #5863f8;
+    margin-bottom: 20px;
+}
+.grid__about-head{
+    font-family: var(--font-poppins);
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 56px;
+    color: #000;
+    width: 374px;
+    margin-bottom: 30px;
+}
+.grid__about-paragraf{
+    width: 444px;
+    height: 78px;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 27px;
+}
+.grid__about-link-content{
+    width: 184px;
+    height: 50px;
+    background: #5863f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid__about-link{
+    font-family: var(--font-poppins);
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.grid__about-link i {
+    margin-left: 11px;
+}
+.grid__images{
+    width: 536px;
+    height: 461px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid__images-first-part{
+    grid-column: 1 / -1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.grid__images-last-part{
+    grid-column: 1 / -1;
+}
+.grid__images img{
+    object-fit: cover;
+}
+.about_us_still{
+    background: url("../img/about-us-background.svg") no-repeat fixed center / cover;
+    padding: 92px 0;
+}
+.about_us_still__group-title{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 14px;
+    color: #5863f8;
+    margin-bottom: 18px;
+}
+.about_us_still__group-head{
+    font-family: var(--font-poppins);
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 56px;
+    color: var(--color-white);
+    width: 376px;
+    margin-bottom: 48px;
+}
+.about_us_still__group-sub_group{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.about_us_still__group-sub_group_box{
+    width: 260px;
+    height: 260px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about_us_still__group-sub_group_box_img{
+    margin-bottom: 21px;
+}
+.about_us_still__group-sub_group_box_title{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    width: 166px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.about_us_still__group-sub_group_box_parafraf{
+    width: 221px;
+    height: 62px;
+    margin: 0 auto;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #b1b1b1;
+}
+.about_us_still__group-sub_group_box:first-child::before{
+    content: url("../img/arrow-left.svg");
+    position: absolute;
+    left: -64px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.about_us_still__group-sub_group_box:last-child::after{
+    content: url("../img/arrow-right.svg");
+    position: absolute;
+    right: -64px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.testimonials__right-side{
+    padding-top: 76px;
+    padding-bottom: 76px;
+    padding-left: 9em;
+    background: #F8F8F8;
+    grid-column: 1 / 2;
+    position: relative;
+}
+.testimonials__right-side-title{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 14px;
+    color: #5863f8;
+    margin-bottom: 16px;
+}
+.testimonials__right-side-head{
+    font-family: var(--font-poppins);
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 56px;
+    color: #000;
+    width: 512px;
+    margin-bottom: 43px;
+}
+.testimonials__right-side_profile_content{
+    display: flex;
+    width: 161px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.testimonials__right-side_profile_data_name{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+}
+.testimonials__right-side_profile_data_profession{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+    opacity: 0.5;
+}
+.testimonials__right-side-desc{
+    width: 352px;
+    height: 62px;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 25px;
+}
+.testimonials__right-side_da_content{
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+.testimonials__right-side_da, .testimonials__right-side_da_active{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.testimonials__right-side_da{
+    background: #d1d1d1;
+}
+.testimonials__right-side_da_active{
+    background: #5863f8;
+}
+.back{
+    width: 60px;
+    height: 60px;
+    background: #5863f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.back img{
+    width: 14px;
+}
+.testimonials__left-side{
+    position: relative;
+}
+.testimonials__left-side-background{
+    background: url(../img/testimonial-background.svg) no-repeat center / cover;
+    width: 100%;
+    height: 100%;
+}
+.next{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.next img{
+    width: 14px;
+}
+.restaurant{
+    margin: 90px 0;
+}
+.restaurant-title{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 14px;
+    color: #5863f8;
+    margin-bottom: 21px;
+}
+.restaurant-head{
+    width: 498px;
+    font-family: var(--font-poppins);
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 56px;
+    color: #000;
+    margin-bottom: 64px;
+}
+.restaurant-plates{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.restaurant-plates-content{
+    display: flex;
+    width: 536px;
+    height: 190px;
+    background: #f8f8f8;
+    position: relative;
+}
+.restaurant-plates-content img{
+    width: 168px;
+    height: 190;
+    object-fit: cover;
+}
+.restaurant-data{
+    padding: 37px 15px;
+}
+.restaurant-data-title{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 14px;
+    color: #5863f8;
+}
+.restaurant-data-head{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+}
+.restaurant-data-desc{
+    width: 260px;
+    height: 62px;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 14px;
+    color: #b1b1b1;
+}
+.restaurant-data-img{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 60px;
+    height: 60px;
+    background: #5863f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restaurant-data-img img{
+    width: 14px;
+}
+.blog-content-title{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 14px;
+    color: #5863f8;
+    margin-bottom: 19px;
+}
+.blog-content-head{
+    font-family: var(--font-poppins);
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 56px;
+    color: #000;
+    width: 465px;
+    margin-bottom: 50px;
+}
+.blog-content-pictures{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.blog-content-pictures-content{
+    margin-bottom: 30px;
+}
+.blog-content-pictures-content:last-child{
+    margin-bottom: 90px;
+}
+.blog-content-pictures-content img{
+    margin-bottom: -10px;
+}
+.blog-content-pictures-content-data{
+    width: 352px;
+    height: 200px;
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-content-pictures-content-title{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 14px;
+    color: #5863f8;
+    margin-bottom: 10px;
+}
+.blog-content-pictures-content-head{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.blog-content-pictures-content-desc{
+    width: 260px;
+    height: 42px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #b1b1b1;
+}
+.photos-desc-title{
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 14px;
+    color: #5863f8;
+    margin-bottom: 20px;
+}
+.photos-desc-head{
+    font-family: var(--font-poppins);
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 56px;
+    color: #000;
+    width: 565px;
+    margin-bottom: 64px;
+}
+.photos-pictures{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+.photos-pictures img{
+    height: 317px;
+    width: 344px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.photos-pictures img::before{
+    content: url(../img/arrow-left.svg);
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    bottom: 0;
+    left:0;
+}
+.photos-pictures img:last-child{
+    width: 310px;
+}
+
+@media(max-width: 1224px){
+    .about_us_still__group-sub_group_box:first-child::before, .about_us_still__group-sub_group_box:last-child::after{
+        display: none;
+    }
+}
+@media(max-width: 1150px){
+        .grid{
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+        }
+        .grid__about-title, .grid__about-head, .grid__about-paragraf, .grid__about-paragraf{
+            width: 100%;
+        }
+        .grid__about-link-content{
+            margin: 0 auto;
+        }
+}
+@media(max-width: 1110px){
+    .reservation{
+        display: none;
+    }
+}
+@media(max-width: 1102px){
+    .restaurant-plates{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .blog-content-pictures{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+@media(max-width: 1062px){
+    .header{
+        padding: 0 20px;
+    }
+    .nav{
+        width: 100%;
+    }
+    .nav, .presentation{
+        margin-bottom: 100px;
+    }
+    .about_us_still{
+        padding: 2em 20px;
+    }
+    .about_us_still__group-title{
+        text-align: center;
+    }
+    .about_us_still__group-head{
+        width: 100%;
+        text-align: center;
+    }
+    .about_us_still__group-sub_group{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about_us_still__group-sub_group_box{
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+    .testimonials__right-side{
+        padding: 0;
+    }
+    .testimonials__right-side-title{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .testimonials__right-side-head{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .testimonials__right-side_profile_content{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .testimonials__right-side-desc{
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+    .testimonials__right-side_da_content{
+        margin: 0 auto 20px;
+    }
+    .testimonials__left-side-background, .back{
+        display: none;
+    }
+    .restaurant-title, .photos-desc-title, .blog-content-title{
+        text-align: center;
+    }
+    .restaurant-head, .photos-desc-head, .blog-content-head{
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 15px;
+    }   
+}
+@media(max-width: 722px){
+    .header{
+        padding: 10px 20px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .nav_logo{
+        margin-bottom: 15px;
+    }
+    .presentation{
+        margin-bottom: 25px;
+    }
+    .presentation__title{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 15px;
+    }
+    .presentation__desc{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 716px){
+    .blog-content-pictures{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 640px){
+    nav{
+        display: none;
+    }
+    .presentation__title, .grid__about-head, .about_us_still__group-head, .testimonials__right-side-head, .restaurant-head, .blog-content-head, .photos-desc-head{
+        font-size: 42px;
+        line-height: 52px;
+    }
+}
+@media(max-width: 620px){
+    .container{
+        padding: 0 20px;
+    }
+    .grid__images-first-part{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .grid__images img{
+        width: 100%;
+        height: 200px;
+    }
+    .grid__images{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1px;
+    }
+}
+@media(max-width: 594px){
+    .nav_logo{
+        margin-bottom: 0;
+    }
+
+    .presentation__title, .grid__about-head, .about_us_still__group-head, .testimonials__right-side-head, .restaurant-head, .blog-content-head, .photos-desc-head{
+        font-size: 22px;
+        line-height: 42px;
+        width: 100%;    
+    }
+    .restaurant-plates-content{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    } 
+    .restaurant-data-title, .restaurant-data-head, .restaurant-data-desc{
+        text-align: center;
+    }
+    .restaurant-data-img{
+        display: none;
+    }
+    .grid__images-first-part{
+        margin-bottom: 0;
+    }
+    .grid__about-paragraf{
+        margin-bottom: 40px;
+        height: auto;
+    }
+    .presentation__desc{
+        width: 100%;
+    }
+}
+@media(max-width: 480px){
+    .restaurant-plates{
+        width: 100%;
+    }
+}
+@media(max-width: 391px){
+    .presentation__desc{
+        width: 100%;
+    }
+    .testimonials__right-side-desc{
+        width: 100%;
+        margin-bottom: 36px;
+    }
+    .blog-content-pictures-content img, .blog-content-pictures-content-data{
+        width: 100%;
+    }
+    .photos-pictures img{
+        width: 100%;
+        height: 200px;
+    }
+    .center{
+        margin: 0 auto;
+    }
+}
